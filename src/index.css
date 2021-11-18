@@ -1,0 +1,63 @@
+html::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+
+/* background of the scrollbar except button or resizer */
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+html::-webkit-scrollbar-track:hover {
+  background-color: transparent;
+}
+
+/* scrollbar itself */
+html::-webkit-scrollbar-thumb {
+  background-color: #29292d;
+  border-radius: 16px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #29292d;
+}
+
+/* set button(top and bottom of the scrollbar) */
+html::-webkit-scrollbar-button {
+  display: none;
+}
+html::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+
+/* background of the scrollbar except button or resizer */
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+html::-webkit-scrollbar-track:hover {
+  background-color: transparent;
+}
+
+/* scrollbar itself */
+html::-webkit-scrollbar-thumb {
+  background-color: #29292d;
+  border-radius: 16px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #29292d;
+}
+
+/* set button(top and bottom of the scrollbar) */
+html::-webkit-scrollbar-button {
+  display: none;
+}
+
+.my-sexy-scroll::-webkit-scrollbar {
+  display: none;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-h {
+  height: 90vh;
+}
