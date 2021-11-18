@@ -14,7 +14,7 @@ const Chatroom = ({ isAuth }) => {
   const [typing, setTyping] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
   const [whoLeft, setWhoLeft] = useState("");
-  const ENDPOINT = "https://muj-c.herokuapp.com/";
+  const ENDPOINT = process.env.REACT_APP_SOCKET_SERVER;
 
   const messageBottom = useRef("");
 
