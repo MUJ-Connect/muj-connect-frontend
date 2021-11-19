@@ -116,7 +116,7 @@ const Chatroom = ({ isAuth }) => {
   return (
     <>
       {isAuth ? (
-        <div className=" h-screen">
+        <div className=" custom-h">
           <div className=" text-center flex justify-evenly pt-12">
             <div className=" float-left flex items-center">
               <img src={logo} alt="" className=" h-8 md:h-12 object-contain" />
