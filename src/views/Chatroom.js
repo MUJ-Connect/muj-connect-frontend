@@ -3,6 +3,7 @@ import avatar from "../assets/images/avatar.png";
 import io from "socket.io-client";
 import { Navigate } from "react-router";
 import logo from "../assets/images/logo.png";
+import Footer from "../components/layout/Footer";
 
 let socket;
 const Chatroom = ({ isAuth }) => {
@@ -37,7 +38,7 @@ const Chatroom = ({ isAuth }) => {
       setPeople(people);
     });
     return () => {};
-  });
+  }, [people]);
 
   const handleTyping = () => {
     if (socket) {
@@ -51,7 +52,7 @@ const Chatroom = ({ isAuth }) => {
       setTyping(typing);
     });
     return () => {};
-  }, []);
+  }, [typing]);
 
   useEffect(() => {
     socket.on("text", (message) => {
@@ -248,6 +249,9 @@ const Chatroom = ({ isAuth }) => {
                 </form>
               </div>
             </div>
+          </div>
+          <div className=" hidden lg:inline">
+            <Footer />
           </div>
         </div>
       ) : (

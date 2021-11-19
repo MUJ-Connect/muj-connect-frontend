@@ -6,6 +6,7 @@ import FeaturesSplit from "../components/sections/FeaturesSplit";
 import Testimonial from "../components/sections/Testimonial";
 import Cta from "../components/sections/Cta";
 import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 
 const Home = ({ isAuth, setIsAuth }) => {
   return (
@@ -25,6 +26,7 @@ const Home = ({ isAuth, setIsAuth }) => {
       />
       <Testimonial topDivider />
       <Cta split />
+      <Footer />
     </>
   );
 };
